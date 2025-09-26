@@ -1,0 +1,7 @@
+{
+  "name": "Smart Curriculum & Attendance",
+  "description": "An intelligent application to automate student attendance using QR codes and provide personalized academic activities during free periods using Gemini.",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}
