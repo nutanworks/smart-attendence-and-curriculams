@@ -84,7 +84,7 @@ const Auth: React.FC<AuthProps> = ({ onLoginSuccess }) => {
       type="button"
       onClick={() => { setActiveRole(role); setError(''); setFormData({ id: '', email: '', password: '' })}}
       className={`pb-2 text-sm font-medium transition-colors duration-300 ease-in-out border-b-2
-        ${activeRole === role ? 'border-[#38A169] text-gray-800' : 'border-transparent text-gray-500 hover:text-gray-800'}`}
+        ${activeRole === role ? 'border-[#38A169] text-black' : 'border-transparent text-gray-500 hover:text-black'}`}
     >
       {label}
     </button>
@@ -106,15 +106,15 @@ const Auth: React.FC<AuthProps> = ({ onLoginSuccess }) => {
         {/* Left Panel: Illustration */}
         <div className="hidden lg:flex flex-col items-center justify-center w-1/2 bg-green-50 p-12 text-center">
             <StudyIllustration className="w-64 h-64 mb-6"/>
-            <h1 className="text-3xl font-bold text-gray-800">SmartClass Hub</h1>
-            <p className="mt-2 text-gray-600">Unlock your academic potential with our modern learning platform.</p>
+            <h1 className="text-3xl font-bold text-black">SmartClass Hub</h1>
+            <p className="mt-2 text-black">Unlock your academic potential with our modern learning platform.</p>
         </div>
         
         {/* Right Panel: Form */}
         <div className="w-full lg:w-1/2 p-8 md:p-12 flex flex-col justify-center">
             <div className="flex items-center gap-3 mb-6">
                 <LogoIcon className="h-8 w-8 text-[#38A169]" />
-                <h2 className="text-2xl font-bold text-gray-800">Sign In</h2>
+                <h2 className="text-2xl font-bold text-black">Sign In</h2>
             </div>
             
             <div className="flex space-x-6 border-b mb-6">
@@ -127,7 +127,7 @@ const Auth: React.FC<AuthProps> = ({ onLoginSuccess }) => {
             
             <form onSubmit={handleSubmit} className="space-y-5">
               <div>
-                <label htmlFor={activeRole === 'admin' ? 'email' : 'id'} className="block text-sm font-medium text-gray-700 mb-1">{getLabel()}</label>
+                <label htmlFor={activeRole === 'admin' ? 'email' : 'id'} className="block text-sm font-medium text-black mb-1">{getLabel()}</label>
                 <input
                     id={activeRole === 'admin' ? 'email' : 'id'}
                     name={activeRole === 'admin' ? 'email' : 'id'}
@@ -141,7 +141,7 @@ const Auth: React.FC<AuthProps> = ({ onLoginSuccess }) => {
 
               <div>
                 <div className="flex justify-between items-center mb-1">
-                    <label htmlFor="password"className="block text-sm font-medium text-gray-700">Password</label>
+                    <label htmlFor="password"className="block text-sm font-medium text-black">Password</label>
                     <a href="#" className="text-sm text-green-600 hover:underline">Forgot password?</a>
                 </div>
                 <div className="relative">
